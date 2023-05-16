@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Cambia fondo",
+    "description": "Extension basica que cambia el fondo del body",
+    "version": "1.0",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+          "js": ["content.js"],
+          "matches": ["https://www.google.com/"]
+        }
+    ]
+}
